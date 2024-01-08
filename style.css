@@ -1,0 +1,280 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@keyframes unblur {
+  from {
+    text-shadow: 0 0 8px #c0c0c0;
+  }
+  to {
+    text-shadow: 0;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: xx-large;
+  font-weight: 600;
+  margin: 10px;
+  animation: unblur 3s 1s 2;
+}
+
+nav {
+  padding: 30px;
+  background-color: #161a30;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  width: 80%;
+}
+
+.nav-right a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-right a:hover {
+  color: red;
+}
+
+.nav-right a:active {
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #f0ece5;
+}
+
+#duck {
+  background-color: #31304d;
+  display: flex;
+}
+
+#duck p {
+  text-transform: capitalize;
+  text-shadow: 2px 2px #f0ece5;
+}
+
+#duck h2 {
+  background-color: #161a30;
+}
+
+#emergency {
+  background-color: #f0ece5;
+}
+
+#emergency h2 {
+  background-color: #b6bbc4;
+}
+
+#emergency a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  color: gray;
+  transition-property: background-color color font-size;
+  /* here we define how long our transition should last*/
+  transition-duration: 2s;
+  /* here we say that our transition should start0,5 seconds after the trigger*/
+  transition-delay: 0.5s;
+}
+
+#emergency a:hover {
+  color: #00ff41;
+  font-size: 1.6rem;
+  background-color: #111111;
+}
+
+#emergency a:hover {
+  color: red;
+}
+
+#emergency a:active {
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+footer {
+  background-color: #31304d;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contact form :not(button) {
+  border: solid 1px;
+  border-color: white;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border: solid 10px;
+}
+
+#contact button {
+  padding: 5px;
+  box-shadow: 2px 2px white;
+}
+
+#contact button:hover {
+  background-color: blue;
+  box-shadow: 2px 2px blue;
+}
+
+#contact div {
+  color: white;
+  padding: 5px;
+}
